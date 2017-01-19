@@ -1,0 +1,486 @@
+Custom config parameter
+          'bam' => undef,
+          'bin-size' => {
+                          'DEF' => 20,
+                          'bam' => 20,
+                          'legacy' => 20,
+                          'mr' => 50,
+                          'mr+utg' => 50,
+                          'mr+utg-noccs' => 50,
+                          'mr-noccs' => 50,
+                          'sam' => 20,
+                          'sr' => 20,
+                          'sr+utg' => 20,
+                          'sr+utg-noccs' => 20,
+                          'sr-noccs' => 20,
+                          'utg' => 20
+                        },
+          'blasr-path' => '/home12/caparmor/bioinfo/tools/anaconda/envs/proovread/proovread/bin/../util/blasr-1.3.1/',
+          'blasr-utg' => {
+                           '-affineAlign' => '',
+                           '-aggressiveIntervalCut' => '',
+                           '-bestn' => 100,
+                           '-minMatch' => 17,
+                           '-nCandidates' => 100,
+                           '-noSplitSubreads' => ''
+                         },
+          'blast-path' => '',
+          'bwa-mr' => {
+                        '-A' => '5',
+                        '-B' => '11',
+                        '-D' => '.5',
+                        '-E' => '4,3',
+                        '-L' => '30,30',
+                        '-O' => '2,1',
+                        '-T' => '3',
+                        '-W' => '20',
+                        '-Y' => '',
+                        '-a' => '',
+                        '-k' => '13',
+                        '-r' => '1',
+                        '-w' => '40',
+                        '-y' => '20'
+                      },
+          'bwa-mr-1' => {
+                          '-A' => '5',
+                          '-B' => '11',
+                          '-D' => '0',
+                          '-E' => '4,3',
+                          '-L' => '30,30',
+                          '-O' => '2,1',
+                          '-T' => '2.5',
+                          '-W' => '20',
+                          '-Y' => '',
+                          '-a' => '',
+                          '-k' => '12',
+                          '-r' => '1',
+                          '-w' => '40',
+                          '-y' => '20'
+                        },
+          'bwa-mr-finish' => {
+                               '-A' => '5',
+                               '-B' => '13',
+                               '-E' => '3,3',
+                               '-L' => '30,30',
+                               '-O' => '15,19',
+                               '-T' => '4',
+                               '-W' => '40',
+                               '-Y' => '',
+                               '-a' => '',
+                               '-k' => '19',
+                               '-w' => '30'
+                             },
+          'bwa-path' => '/home12/caparmor/bioinfo/tools/anaconda/envs/proovread/proovread/bin/../util/bwa/',
+          'bwa-sr' => {
+                        '-A' => '5',
+                        '-B' => '11',
+                        '-D' => '0',
+                        '-E' => '4,3',
+                        '-L' => '30,30',
+                        '-O' => '2,1',
+                        '-T' => '2.5',
+                        '-W' => '20',
+                        '-Y' => '',
+                        '-a' => '',
+                        '-k' => '12',
+                        '-r' => '1',
+                        '-w' => '40',
+                        '-y' => '20'
+                      },
+          'bwa-sr-finish' => {
+                               '-A' => '5',
+                               '-B' => '13',
+                               '-D' => '.75',
+                               '-E' => '3,3',
+                               '-L' => '30,30',
+                               '-O' => '15,19',
+                               '-T' => '4',
+                               '-W' => '18',
+                               '-Y' => '',
+                               '-a' => '',
+                               '-k' => '17',
+                               '-r' => '1.5',
+                               '-w' => '30'
+                             },
+          'bwa-utg' => {
+                         '-A' => '5',
+                         '-B' => '11',
+                         '-E' => '4,3',
+                         '-L' => '0,0',
+                         '-O' => '2,1',
+                         '-W' => '40',
+                         '-Y' => '',
+                         '-a' => '',
+                         '-k' => '14',
+                         '-r' => '10',
+                         '-w' => '500'
+                       },
+          'chimera-filter' => {
+                                '--min-score' => '0.2',
+                                '--trim-length' => 20,
+                                '--verbose' => 2
+                              },
+          'chunk-size' => 100,
+          'coverage' => 50,
+          'coverage-scale-factor' => '0.75',
+          'daligner-path' => '',
+          'dazz-db-path' => '',
+          'detect-chimera' => {
+                                'DEF' => 0,
+                                'bwa-mr-finish' => 1,
+                                'bwa-sr-finish' => 1,
+                                'read-sam' => 1,
+                                'shrimp-finish' => 1
+                              },
+          'hcr-mask' => {
+                          'DEF' => '20,41,80,130,60,0.7',
+                          'bwa-mr-4' => '20,41,80,130,60,0.3',
+                          'bwa-mr-5' => '20,41,80,130,60,0.3',
+                          'bwa-mr-6' => '20,41,80,130,60,0.3',
+                          'bwa-sr-4' => '20,41,80,130,60,0.3',
+                          'bwa-sr-5' => '20,41,80,130,60,0.3',
+                          'bwa-sr-6' => '20,41,80,130,60,0.3'
+                        },
+          'ignore-weak-reads' => {
+                                   'DEF' => 0
+                                 },
+          'keep-temporary-files' => 0,
+          'long-reads' => [],
+          'lr-qv-offset' => undef,
+          'mask-min-gain-frac' => '0.03',
+          'mask-shortcut-frac' => '0.92',
+          'mask-weak-reads' => {
+                                 'DEF' => 0
+                               },
+          'max-ins-length' => {
+                                'DEF' => 0
+                              },
+          'min-ncscore' => {
+                             'DEF' => undef,
+                             'blasr-utg' => '3.3',
+                             'dazzler-utg' => '3.7'
+                           },
+          'mode' => 'auto',
+          'mode-tasks' => {
+                            'bam' => [
+                                       'read-long',
+                                       'read-bam'
+                                     ],
+                            'dazz-utg' => [
+                                            'read-long',
+                                            'ccs-1',
+                                            'dazzler-utg'
+                                          ],
+                            'dazz-utg-noccs' => [
+                                                  'read-long',
+                                                  'dazzler-utg'
+                                                ],
+                            'legacy' => [
+                                          'read-long',
+                                          'shrimp-pre-1',
+                                          'shrimp-pre-2',
+                                          'shrimp-pre-3',
+                                          'shrimp-finish'
+                                        ],
+                            'mr' => [
+                                      'read-long',
+                                      'ccs-1',
+                                      'bwa-mr-1',
+                                      'bwa-mr-2',
+                                      'bwa-mr-3',
+                                      'bwa-mr-4',
+                                      'bwa-mr-5',
+                                      'bwa-mr-6',
+                                      'bwa-mr-finish'
+                                    ],
+                            'mr+dazz-utg' => [
+                                               'read-long',
+                                               'ccs-1',
+                                               'dazzler-utg',
+                                               'bwa-mr-1',
+                                               'bwa-mr-2',
+                                               'bwa-mr-3',
+                                               'bwa-mr-4',
+                                               'bwa-mr-5',
+                                               'bwa-mr-6',
+                                               'bwa-mr-finish'
+                                             ],
+                            'mr+dazz-utg-noccs' => [
+                                                     'read-long',
+                                                     'dazzler-utg',
+                                                     'bwa-mr-1',
+                                                     'bwa-mr-2',
+                                                     'bwa-mr-3',
+                                                     'bwa-mr-4',
+                                                     'bwa-mr-5',
+                                                     'bwa-mr-6',
+                                                     'bwa-mr-finish'
+                                                   ],
+                            'mr+utg' => [
+                                          'read-long',
+                                          'ccs-1',
+                                          'blasr-utg',
+                                          'bwa-mr-1',
+                                          'bwa-mr-2',
+                                          'bwa-mr-3',
+                                          'bwa-mr-4',
+                                          'bwa-mr-5',
+                                          'bwa-mr-6',
+                                          'bwa-mr-finish'
+                                        ],
+                            'mr+utg-noccs' => [
+                                                'read-long',
+                                                'blasr-utg',
+                                                'bwa-mr-1',
+                                                'bwa-mr-2',
+                                                'bwa-mr-3',
+                                                'bwa-mr-4',
+                                                'bwa-mr-5',
+                                                'bwa-mr-6',
+                                                'bwa-mr-finish'
+                                              ],
+                            'mr-noccs' => [
+                                            'read-long',
+                                            'bwa-mr-1',
+                                            'bwa-mr-2',
+                                            'bwa-mr-3',
+                                            'bwa-mr-4',
+                                            'bwa-mr-5',
+                                            'bwa-mr-6',
+                                            'bwa-mr-finish'
+                                          ],
+                            'sam' => [
+                                       'read-long',
+                                       'read-sam'
+                                     ],
+                            'sr' => [
+                                      'read-long',
+                                      'ccs-1',
+                                      'bwa-sr-1',
+                                      'bwa-sr-2',
+                                      'bwa-sr-3',
+                                      'bwa-sr-4',
+                                      'bwa-sr-5',
+                                      'bwa-sr-6',
+                                      'bwa-sr-finish'
+                                    ],
+                            'sr+dazz-utg' => [
+                                               'read-long',
+                                               'ccs-1',
+                                               'dazzler-utg',
+                                               'bwa-sr-1',
+                                               'bwa-sr-2',
+                                               'bwa-sr-3',
+                                               'bwa-sr-4',
+                                               'bwa-sr-5',
+                                               'bwa-sr-6',
+                                               'bwa-sr-finish'
+                                             ],
+                            'sr+dazz-utg-noccs' => [
+                                                     'read-long',
+                                                     'dazzler-utg',
+                                                     'bwa-sr-1',
+                                                     'bwa-sr-2',
+                                                     'bwa-sr-3',
+                                                     'bwa-sr-4',
+                                                     'bwa-sr-5',
+                                                     'bwa-sr-6',
+                                                     'bwa-sr-finish'
+                                                   ],
+                            'sr+utg' => [
+                                          'read-long',
+                                          'ccs-1',
+                                          'blasr-utg',
+                                          'bwa-sr-1',
+                                          'bwa-sr-2',
+                                          'bwa-sr-3',
+                                          'bwa-sr-4',
+                                          'bwa-sr-5',
+                                          'bwa-sr-6',
+                                          'bwa-sr-finish'
+                                        ],
+                            'sr+utg-noccs' => [
+                                                'read-long',
+                                                'blasr-utg',
+                                                'bwa-sr-1',
+                                                'bwa-sr-2',
+                                                'bwa-sr-3',
+                                                'bwa-sr-4',
+                                                'bwa-sr-5',
+                                                'bwa-sr-6',
+                                                'bwa-sr-finish'
+                                              ],
+                            'sr-noccs' => [
+                                            'read-long',
+                                            'bwa-sr-1',
+                                            'bwa-sr-2',
+                                            'bwa-sr-3',
+                                            'bwa-sr-4',
+                                            'bwa-sr-5',
+                                            'bwa-sr-6',
+                                            'bwa-sr-finish'
+                                          ],
+                            'utg' => [
+                                       'read-long',
+                                       'ccs-1',
+                                       'blasr-utg'
+                                     ],
+                            'utg-noccs' => [
+                                             'read-long',
+                                             'blasr-utg'
+                                           ]
+                          },
+          'overwrite' => 0,
+          'prefix' => undef,
+          'rep-coverage' => {
+                              'DEF' => undef,
+                              'blasr-utg' => 7,
+                              'dazzler-utg' => 7
+                            },
+          'sam' => undef,
+          'samtools-path' => '',
+          'seq-filter' => {
+                            '--min-length' => 500,
+                            '--trim-win' => '12,5'
+                          },
+          'short-reads' => [],
+          'shrimp-finish' => {
+                               '--ext-q' => -2,
+                               '--ext-r' => -2,
+                               '--hash-spaced-kmers' => '',
+                               '--match' => 5,
+                               '--mismatch' => -10,
+                               '--open-q' => -5,
+                               '--open-r' => -5,
+                               '--report' => 200,
+                               '-h' => '90%',
+                               '-s' => '11111111111111111111'
+                             },
+          'shrimp-mr-1' => {
+                             '--ext-q' => '-3',
+                             '--ext-r' => '-4',
+                             '--match' => '5',
+                             '--mismatch' => '-11',
+                             '--no-mapping-qualities' => '',
+                             '--open-q' => '-1',
+                             '--open-r' => '-2',
+                             '--report' => '100',
+                             '-h' => '55%',
+                             '-r' => '50%',
+                             '-s' => '111111111111',
+                             '-w' => '150%'
+                           },
+          'shrimp-path' => '/home12/caparmor/bioinfo/tools/anaconda/envs/proovread/proovread/bin/../util/shrimp-2.2.3/',
+          'shrimp-pre-1' => {
+                              '--ext-q' => -3,
+                              '--ext-r' => -4,
+                              '--match' => 5,
+                              '--mismatch' => -11,
+                              '--no-mapping-qualities' => '',
+                              '--open-q' => -1,
+                              '--open-r' => -2,
+                              '--report' => 200,
+                              '-h' => '55%',
+                              '-s' => '11111111111',
+                              '-w' => '130%'
+                            },
+          'shrimp-pre-2' => {
+                              '--ext-q' => -3,
+                              '--ext-r' => -4,
+                              '--match' => 5,
+                              '--mismatch' => -11,
+                              '--no-mapping-qualities' => '',
+                              '--open-q' => -1,
+                              '--open-r' => -2,
+                              '--report' => 200,
+                              '-h' => '55%',
+                              '-r' => '45%',
+                              '-s' => '1111111111',
+                              '-w' => '140%'
+                            },
+          'shrimp-pre-3' => {
+                              '--ext-q' => -3,
+                              '--ext-r' => -4,
+                              '--match' => 5,
+                              '--mismatch' => -11,
+                              '--no-mapping-qualities' => '',
+                              '--open-q' => -1,
+                              '--open-r' => -2,
+                              '--report' => 200,
+                              '-h' => '50%',
+                              '-r' => '35%',
+                              '-s' => '11111111,1111110000111111',
+                              '-w' => '140%'
+                            },
+          'shrimp-pre-4' => {
+                              '--ext-q' => -3,
+                              '--ext-r' => -4,
+                              '--match' => 5,
+                              '--mismatch' => -11,
+                              '--no-mapping-qualities' => '',
+                              '--open-q' => -1,
+                              '--open-r' => -2,
+                              '--report' => 200,
+                              '-h' => '35%',
+                              '-r' => '25%',
+                              '-s' => '1111111,111101111',
+                              '-w' => '150%'
+                            },
+          'shrimp-sr-1' => {
+                             '--ext-q' => '-3',
+                             '--ext-r' => '-4',
+                             '--match' => '5',
+                             '--mismatch' => '-11',
+                             '--no-mapping-qualities' => '',
+                             '--open-q' => '-1',
+                             '--open-r' => '-2',
+                             '--report' => '200',
+                             '-h' => '45%',
+                             '-r' => '40%',
+                             '-s' => '1111111111',
+                             '-w' => '150%'
+                           },
+          'siamaera' => {},
+          'sort-sam-by-coordinates' => undef,
+          'sr-chunk-number' => 1000,
+          'sr-chunk-step' => 20,
+          'sr-count' => undef,
+          'sr-coverage' => {
+                             'DEF' => 15,
+                             'bwa-mr-finish' => 30,
+                             'bwa-sr-finish' => 30
+                           },
+          'sr-indel-taboo' => '0.1',
+          'sr-indel-taboo-length' => 7,
+          'sr-length' => undef,
+          'sr-qv-offset' => undef,
+          'sr-trim' => 1,
+          'threads' => 4,
+          'utg-bin-coverage' => 1,
+          'utg-bin-size' => 150
+Command line parameter
+          'V|version' => \undef,
+          'bam=s' => \undef,
+          'coverage=s' => \50,
+          'c|cfg=s' => \undef,
+          'debug!' => \undef,
+          'haplo-coverage!' => \undef,
+          'h|help' => \undef,
+          'ignore-sr-length' => \undef,
+          'keep-temporary-files+' => \0,
+          'lr-qv-offset=i' => \undef,
+          'l|long-reads=s@' => \[
+                                   '/work/galaxy/p_margaritifera/genome/pacbio_manip/1G_chunk_fastq/Run256_602.A02-01.fastq'
+                                 ],
+          'm|mode=s' => \'auto',
+          'overwrite' => \0,
+          'p|prefix=s' => \'proovread_1200',
+          'sam=s' => \undef,
+          'sample-run:s' => \undef,
+          'sampling!' => \1,
+          'sr-qv-offset=i' => \33,
+          's|short-reads=s@' => \[
+                                    '/work/galaxy/p_margaritifera/genome/illumina_40x_normalized/PE_genome_40x_cat.fastq'
+                                  ],
+          't|threads=i' => \16,
+          'u|unitigs=s@' => \[]
